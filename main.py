@@ -36,6 +36,7 @@ def mostrar_menu():
     print("1. Agregar meta")
     print("2. Ver metas")
     print("3. Contar metas")
+    print("4. Salir")
 
 
 continuar = True
