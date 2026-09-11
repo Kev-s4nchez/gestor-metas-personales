@@ -5,6 +5,8 @@ Aplicacion de consola para registrar y hacer seguimiento a tus metas.
 
 metas = []
 
+def contar_metas():
+    print(f"Tienes {len(metas)} metas registradas.")
 
 def agregar_meta(descripcion):
     if descripcion.strip() == "":
@@ -33,7 +35,7 @@ def mostrar_menu():
     print("Organiza tus objetivos y sigue tu progreso")
     print("1. Agregar meta")
     print("2. Ver metas")
-    print("3. Salir")
+    print("3. Contar metas")
 
 
 continuar = True
@@ -48,6 +50,8 @@ while continuar:
     elif opcion == "2":
         ver_metas()
     elif opcion == "3":
+        contar_metas()
+    elif opcion == "4":
         print("Hasta luego!")
         continuar = False
     else:
